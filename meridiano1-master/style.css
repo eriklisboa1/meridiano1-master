@@ -8,7 +8,8 @@
 /*==================== VARIABLES ====================*/
 :root {
   --header-height: 4.5rem;
-
+  
+  /*Verde forte
   /* Colors */
   --hue: 160;
   /* HSL color mode */
@@ -16,10 +17,13 @@
   --base-color-second: hsl(var(--hue) 30% 25%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
+  --title-color: hsl(49, 81%, 76%);  
   --text-color: hsl(0, 0%, 26%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
 
+  /*Fontes Amarelas
+  /* Colors */
 
 
   /* Fonts */
@@ -509,49 +513,88 @@ nav.show div.icon-close {
 
 /*==================== FOOTER ====================*/
 /*==================== FOOTER ====================*/
+/* Estilização do Footer */
 footer {
-  background: var(--base-color);
-}
-
-footer.section {
-  padding: 4rem 0;
-}
-
-footer .logo {
-  display: inline-block;
-  margin-bottom: 1.5rem;
-}
-
-footer .brand p {
-  color: var(--text-color-light);
-  margin-bottom: 0.3rem; /* Reduz o espaçamento entre os parágrafos */
-}
-
-footer i {
-  font-size: 1.5rem;
-  color: var(--text-color-light);
+  background: #0F241D; /* Cor escura como no exemplo */
+  padding: 3rem 0;
+  color: #f7e791; /* Cor do texto em amarelo suave */
+  text-align: center;
 }
 
 footer .container {
   display: flex;
-  justify-content: space-between; /* Ajusta a distribuição dos elementos */
-  align-items: center; /* Alinha verticalmente */
-  gap: 2rem; /* Reduz espaço entre os blocos */
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
+/* Estilização da Logo */
+footer .logo {
+  width: 120px; /* Ajuste o tamanho conforme necessário */
+  margin-bottom: 1rem;
+}
+
+/* Informações da Empresa */
+footer .brand p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.contato-mapa {
+  flex: 1.5; /* Dá mais espaço ao mapa */
+  display: flex;
+  justify-content: center;
+}
+
+.contato-mapa iframe {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  border: 0;
+}
+
+
+/* Redes Sociais */
 footer .social {
   display: flex;
-  gap: 0.8rem; /* Reduz a distância entre os ícones */
-  width: fit-content;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 footer .social a {
-  display: inline-block;
-  transition: 0.3s;
+  font-size: 1.5rem;
+  color: #f7e791;
+  transition: transform 0.3s ease;
 }
 
 footer .social a:hover {
-  transform: translateY(-8px);
+  transform: translateY(-3px);
+  color: #d4af37; /* Dourado mais forte no hover */
+}
+
+/* Botão de WhatsApp */
+.contatoZAP {
+  margin-top: 1rem;
+}
+
+.contatoZAP a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #0F241D;
+  background: #f7e791;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.contatoZAP a:hover {
+  background: #d4af37;
+  transform: translateY(-3px);
 }
 
 
